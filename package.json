@@ -1,0 +1,24 @@
+{
+  "name": "Then",
+  "description": "a tiny(only 200 lines) promise/A+ library",
+  "version": "0.1.0",
+  "author": "iSayme <isaymeorg@gmail.com>",
+  "licence": "MIT",
+  "main": "then.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:isayme/then.js.git"
+  },
+  "devDependencies": {
+    "promises-aplus-tests": "*"
+  },
+  "scripts": {
+    "test": "promises-aplus-tests test/promise-aplus-adapter.js"
+  },
+  "keywords": [
+    "Promises/A+",
+    "promises-aplus",
+    "promise",
+    "then"
+  ]
+}

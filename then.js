@@ -78,14 +78,14 @@
         });
     };
 
-    Then.all = function(promises) {
-        if (!isArray(promises)) {
+    Then.all = function(iterable) {
+        if (!isArray(iterable)) {
             throw new TypeError('argument must be a array.');
         }
 
         return new Then(function(resolve, reject) {
             var result = [];
-            var length = promises.length;
+            var length = iterable.length;
             var cnt = 0;
 
             function resolver(index) {
@@ -98,20 +98,20 @@
                 };
             }
             
-            for (var i = 0, l = promises.length; i < l; i++) {
-                promises[i].then(resolver(i), reject);
+            for (var i = 0, l = iterable.length; i < l; i++) {
+                iterable[i].then(resolver(i), reject);
             }
         });
     };
 
-    Then.race = function(promises) {
-        if (!isArray(promises)) {
+    Then.race = function(iterable) {
+        if (!isArray(iterable)) {
             throw new TypeError('argument must be a array.');
         }
 
         return new Then(function(resolve, reject) {
-            for (var i = 0, l = promises.length; i < l; i++) {
-                promises[i].then(resolve, reject);
+            for (var i = 0, l = iterable.length; i < l; i++) {
+                iterable[i].then(resolve, reject);
             }
         });
     };

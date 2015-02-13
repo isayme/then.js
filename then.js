@@ -2,7 +2,7 @@
     'use strict';
 
     if (typeof define === 'function' && define.amd) {
-        define('Then', function() {
+        define(function() {
             return factory();
         });
     } else if (typeof exports === 'object' && module.exports) {

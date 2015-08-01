@@ -1,7 +1,7 @@
 {
-  "name": "Then",
-  "description": "a tiny(only 200 lines) promise/A+ library",
-  "version": "0.1.2",
+  "name": "then-js",
+  "description": "A tiny(only 200 lines) promise/A+ library",
+  "version": "0.1.3",
   "author": "iSayme <isaymeorg@gmail.com>",
   "licence": "MIT",
   "main": "then.js",

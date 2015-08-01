@@ -6,8 +6,11 @@
 # Then #
 A tiny(only 200 lines) promise/A+ library.
 
+[![NPM](https://nodei.co/npm/then-js.png)](https://nodei.co/npm/then-js/)
+
 [![NPM Version](https://img.shields.io/npm/v/then-js.svg)](https://npmjs.org/package/then-js)
 [![Build Status](https://img.shields.io/travis/isayme/then.js.svg)](https://travis-ci.org/isayme/then.js)
+
 
 # APIs #
 The APIs follow [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), refer it for more infomation.
